@@ -1,0 +1,9 @@
+<center>
+<br /><br /><br />
+<h1>KAT Data</h1>
+<br />
+<h2>Records:</h2>
+{{=grid}}
+
+{{=BEAUTIFY(request.vars)}}
+</center>}

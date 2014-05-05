@@ -1,0 +1,23 @@
+{{left_sidebar_enabled,right_sidebar_enabled=False,('message' in globals())}}
+{{extend 'layout.html'}}
+
+{{if 'message' in globals():}}
+<h3>{{=message}}</h3>
+
+
+{{elif 'content' in globals():}}
+{{=content}}
+{{else:}}
+{{=BEAUTIFY(response._vars)}}
+{{pass}}
+
+{{block right_sidebar}}
+{{=A(T("Administrative Interface"), _href=URL('KAT','default','Admin'), _class='btn',
+     _style='margin-top: 1em;')}}
+
+{{=A(T("Take the test"), _href=URL('KAT','default','Test'), _class='btn',
+     _style='margin-top: 1em;')}}
+
+
+
+{{end}}

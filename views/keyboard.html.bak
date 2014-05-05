@@ -1,0 +1,3 @@
+{{extend 'layout.html'}}
+<h1>KEYBOARD</h1>
+{{=BEAUTIFY(response._vars)}}

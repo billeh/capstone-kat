@@ -1,0 +1,10 @@
+{{extend 'layout.html'}}
+<h1>Administrative Page</h1>
+
+
+{{=A(T("Edit User Membership"), _href=URL('KAT','default','admin_membership'), _class='btn',
+     _style='margin-top: 1em;')}}
+
+{{=A(T("Edit User Information"), _href=URL('KAT','default','admin_user'), _class='btn',
+     _style='margin-top: 1em;')}}
+{{=BEAUTIFY(response._vars)}}
